@@ -7,6 +7,10 @@ var app = app || {};
   // code that used to be in index.html.
   // Also be sure to hide all the main section elements, and reveal the #articles section:
 
+  articleController.init = function() {
+    $('.tab-content').hide();
+    $('articles').fadeIn();
+  }
 
   module.articleController = articleController;
 })(app);
